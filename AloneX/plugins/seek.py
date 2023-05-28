@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from AloneX import YouTube, app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.misc import db
 from AloneX.utils import AdminRightsCheck, seconds_to_min
 
