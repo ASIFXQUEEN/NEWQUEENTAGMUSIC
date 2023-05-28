@@ -26,7 +26,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await Vip.resume_stream(chat_id)
+    await Alone.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.first_name),
         reply_markup=close_keyboard
