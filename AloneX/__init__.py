@@ -20,7 +20,6 @@ sudo()
 
 # Clients
 app = AloneXBot()
-
 userbot = Userbot()
 
 
