@@ -17,7 +17,7 @@ from AloneX.utils.inline.play import close_keyboard
 from AloneX.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from AloneX.utils.pastebin import Vipbin
+from AloneX.utils.pastebin import Alonebin
 from AloneX.utils.stream.stream import stream
 
 # Command
