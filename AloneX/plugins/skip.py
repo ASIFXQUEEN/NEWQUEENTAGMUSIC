@@ -65,7 +65,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_keyboard
                                     )
-                                    await Vip.stop_stream(chat_id)
+                                    await Alone.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -93,7 +93,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_keyboard
                 )
                 try:
-                    return await Vip.stop_stream(chat_id)
+                    return await Alone.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -102,7 +102,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name, message.chat.title),
                     reply_markup=close_keyboard
                 )
-                return await Vip.stop_stream(chat_id)
+                return await Alone.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -124,7 +124,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Vip.skip_stream(chat_id, link, video=status, image=image)
+            await Alone.skip_stream(chat_id, link, video=status, image=image)
         except Exception:
             return await message.reply_text(_["call_9"])
 
@@ -158,7 +158,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Vip.skip_stream(chat_id, file_path, video=status, image=image)
+            await Alone.skip_stream(chat_id, file_path, video=status, image=image)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -178,7 +178,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Vip.skip_stream(chat_id, videoid, video=status)
+            await Alone.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -200,7 +200,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await Vip.skip_stream(chat_id, queued, video=status, image=image)
+            await Alone.skip_stream(chat_id, queued, video=status, image=image)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
