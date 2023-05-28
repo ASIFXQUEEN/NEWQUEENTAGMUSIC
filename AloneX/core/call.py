@@ -685,4 +685,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-Vip = Call()
+Alone = Call()
