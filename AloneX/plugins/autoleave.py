@@ -3,7 +3,7 @@ from datetime import datetime
 
 import config
 from AloneX import app
-from AloneX.core.call import Vip, autoend
+from AloneX.core.call import Alone, autoend
 from AloneX.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
