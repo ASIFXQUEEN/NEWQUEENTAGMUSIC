@@ -26,7 +26,15 @@ from AloneX.utils.database import is_served_user
 from AloneX.utils.inline.playlist import botplaylist_markup
 from AloneX.utils.logger import play_logs
 from AloneX.utils.stream.stream import stream
-
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+STRING_SESSION = getenv("STRING_SESSION", "")
+from dotenv import load_dotenv
+from pyrogram import filters
+import asyncio
+import time
+imort config
+from AloneX import app
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
