@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from AloneX import app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.utils.database import set_loop
 from AloneX.utils.decorators import AdminRightsCheck
 from AloneX.utils.inline.play import close_keyboard
