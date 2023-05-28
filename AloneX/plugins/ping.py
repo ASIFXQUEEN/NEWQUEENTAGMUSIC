@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from AloneX import app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.utils import bot_sys_stats
 from AloneX.utils.decorators.language import language
 from AloneX.utils.inline.play import close_keyboard
