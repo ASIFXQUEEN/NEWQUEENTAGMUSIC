@@ -12,7 +12,7 @@ from config import BANNED_USERS, lyrical
 from strings import get_command
 from AloneX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.utils import seconds_to_min, time_to_seconds
 from AloneX.utils.channelplay import get_channeplayCB
 from AloneX.utils.database import is_video_allowed
