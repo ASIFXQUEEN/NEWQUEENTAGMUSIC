@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AloneX import Carbon, YouTube, app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.misc import db
 from AloneX.utils.database import (add_active_chat,
                                        add_active_video_chat,
