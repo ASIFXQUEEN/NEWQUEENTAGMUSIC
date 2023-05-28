@@ -33,7 +33,6 @@ from dotenv import load_dotenv
 from pyrogram import filters
 import asyncio
 import time
-imort config
 from AloneX import app
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
