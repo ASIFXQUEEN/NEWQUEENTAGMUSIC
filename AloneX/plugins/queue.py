@@ -11,7 +11,7 @@ from config import BANNED_USERS
 from strings import get_command
 from AloneX import app
 from AloneX.misc import db
-from AloneX.utils import (Vipbin, get_channeplayCB,
+from AloneX.utils import (Alonebin, get_channeplayCB,
                               seconds_to_min)
 from AloneX.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
