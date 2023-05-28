@@ -11,7 +11,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL,
                     MUSIC_BOT_NAME, adminlist)
 from AloneX import YouTube, app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.misc import SUDOERS, db
 from AloneX.utils import bot_sys_stats
 from AloneX.utils.database import (
