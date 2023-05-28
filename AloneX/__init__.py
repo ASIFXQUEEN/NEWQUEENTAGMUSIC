@@ -3,7 +3,6 @@ from AloneX.core.dir import dirr
 from AloneX.core.git import git
 from AloneX.core.userbot import Userbot
 from AloneX.misc import dbb, heroku, sudo
-from aiohttp import ClientSession
 
 from .logging import LOGGER
 
