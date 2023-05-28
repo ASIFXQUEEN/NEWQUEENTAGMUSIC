@@ -45,7 +45,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
 from AloneX import app
-from AloneX.core.call import Vip
+from AloneX.core.call import Alone
 from AloneX.misc import db
 from AloneX.utils.database import get_authuser_names, get_cmode
 from AloneX.utils.decorators import (ActualAdminCB, AdminActual, language)
