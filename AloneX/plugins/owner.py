@@ -64,7 +64,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
+                        "🌱𝗔𝗟𝗢𝗡𝗘 𝗠𝗨𝗦𝗜𝗖🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
                 ]
             ]
         ),
@@ -82,7 +82,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
+                        "🌱𝗔𝗟𝗢𝗡𝗘 𝗠𝗨𝗦𝗜𝗖🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
                 ]
             ]
         ),
@@ -100,7 +100,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/ALONE_WAS_BOT")
+                        "🌱𝗔𝗟𝗢𝗡𝗘 𝗠𝗨𝗦𝗜𝗖🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
                 ]
             ]
         ),
