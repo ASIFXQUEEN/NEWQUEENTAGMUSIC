@@ -2,7 +2,7 @@ import math
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from AloneX.utilities import config
+from AloneX.utils import config
 from AloneX.modules.utils.formatters import time_to_seconds
 
 
