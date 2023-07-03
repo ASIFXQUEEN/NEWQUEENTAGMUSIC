@@ -1,9 +1,11 @@
 import math
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP, YOUR_GROUP, YOUR_CHANNEL
+from AloneX import app
 
-from AloneX.utils import config
-from AloneX.modules.utils.formatters import time_to_seconds
+import config
+from AloneX.utils.formatters import time_to_seconds
 
 
 
