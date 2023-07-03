@@ -61,10 +61,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🌿 ᴏᴡɴᴇʀ 🌿", url=f"{config.OWNER_USERNAME}"
+                text="🌿 ᴜᴘᴅᴀᴛᴇs 🌿", url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"{config.SUPPORT_GROUP}"
+                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_GROUP
             ),
         ],
         [
