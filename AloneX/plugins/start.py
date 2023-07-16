@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgUAAxkBAAJE8GK4EsoLVZC2SW5W5Q-QAkaoN8f_AAL9BQACiy14VGoQxOCDfE1KKQQ")
+            await message.reply_sticker("CAACAgUAAx0CX5hlRAACRfRktCYXT4xVXVnmwtkC2unXimSJpQACzAkAAsOyoVXp1wJmxpUwTx4E")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"].format(config.SUPPORT_HEHE), reply_markup=keyboard
@@ -88,7 +88,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHeavenMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/AlonesHeaven) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -154,18 +154,24 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
-
-📌 **ᴛɪᴛʟᴇ:** {title}
-
-⏳ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration} ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs:** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
-🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
-📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
-🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
-
-💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {config.MUSIC_BOT_NAME}"""
+ㅤㅤ**🔔 ❰ 𝐒ᴏɴɢ🎙𝐈ɴғᴏʀᴍᴀᴛɪᴏɴ ❱ 🔔**
+    
+★ ° . *　　　°　.　°☆ 　. * ● ¸
+.**🌺 𝐍𝐚𝐦𝐞 ➪ {title}**　　
+★ 　° :. ★　 * • ○ ° ★
+.**🌼 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ➪ {duration}** ᴍɪɴᴜᴛᴇ✰
+°. ● . ★ ° .° °☆ ¸. ● . ★　★
+° **🕹 𝐕𝐢𝐞𝐰𝐬 ➪ {views}**☆
+•✰˚♫. * ● ¸ .★ 　° :●. *° °☆ ¸. ● . ★　★
+• **⏰ 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐎𝐧 ➪ {published}**✰
+° °☆ 　¸. ● . 　　★　★✰˚♫. ○ ✰˚♫
+• **📺 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ➪ {channel}**★
+° °☆ 　¸. ● . 　　★　•★• ✰˚♫
+° **📎 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐢𝐧𝐤 ➪ [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})**✰
+° :. 　 * • ○ ° ★　 .　 * 　.✰˚  ♫  •✰• ˚♫
+•**📡 𝐋𝐢𝐧𝐤 ➪ [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})**★
+° °☆ 　¸. ● . 　　★　★
+☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -173,7 +179,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/DevilsHeavenMF"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/AloneXBots"
                         ),
                     ],
                 ]
