@@ -202,7 +202,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "AloneX/assets/Alonex.png",
+    "AloneX/assets/anonx.png",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
@@ -212,7 +212,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "AloneX/assets/Alonex.png",
+    "AloneX/assets/anonx.png",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
@@ -317,7 +317,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "AloneX/assets/Alonex.png":
+    if STREAM_IMG_URL != "AloneX/assets/anonx.png":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -334,7 +334,7 @@ if SOUNCLOUD_IMG_URL:
             sys.exit()
 
 if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "AloneX/assets/Alonex.png":
+    if YOUTUBE_IMG_URL != "AloneX/assets/anonx.png":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
