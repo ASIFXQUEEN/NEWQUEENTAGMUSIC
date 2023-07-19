@@ -1,16 +1,16 @@
-import asyncio
 import os
-import random
 import re
 import textwrap
+
 import aiofiles
 import aiohttp
-from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
-                 ImageFont, ImageOps)
+import numpy as np
+
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
-import AloneX import app
 
 from config import YOUTUBE_IMG_URL
+from AnonX import app
 
 
 def make_col():
