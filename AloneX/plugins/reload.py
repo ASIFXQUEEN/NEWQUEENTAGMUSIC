@@ -48,8 +48,7 @@ from AloneX import app
 from AloneX.core.call import Alone
 from AloneX.misc import db
 from AloneX.utils.database import get_authuser_names, get_cmode
-from AloneX.utils.decorators import (ActualAdminCB, AdminActual, language)
-from AloneX.utils.command import commandpro                     
+from AloneX.utils.decorators import (ActualAdminCB, AdminActual, language)                    
 from AloneX.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
