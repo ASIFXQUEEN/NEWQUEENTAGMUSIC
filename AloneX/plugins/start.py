@@ -7,8 +7,7 @@ from pyrogram.types import (InlineKeyboardButton,
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from config import BANNED_USERS
-from config import OWNER_ID
+from config import BANNED_USERS, OWNER_ID, MUSIC_BOT_NAME
 from strings import get_command, get_string
 from AloneX import Telegram, YouTube, app
 from AloneX.misc import SUDOERS, _boot_
@@ -43,7 +42,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgUAAxkBAAEJt35ktTDlpHHx0ASdT5hxriTbhBnYywACzAkAAsOyoVXp1wJmxpUwTy8E")
+            await message.reply_sticker("CAACAgUAAx0CZTyC9AABASWxZLbcdFBor7OozKPbjkPrChTlnmoAAqEKAAI10LhVbR-6DKqKOWseBA")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"].format(config.SUPPORT_HEHE), reply_markup=keyboard
@@ -88,7 +87,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/AlonesHeaven) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/iro_x_support) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -154,24 +153,18 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-ㅤㅤ**🔔 ❰ 𝐒ᴏɴɢ🎙𝐈ɴғᴏʀᴍᴀᴛɪᴏɴ ❱ 🔔**
-    
-★ ° . *　　　°　.　°☆ 　. * ● ¸
-.**🌺 𝐍𝐚𝐦𝐞 ➪ {title}**　　
-★ 　° :. ★　 * • ○ ° ★
-.**🌼 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 ➪ {duration}** ᴍɪɴᴜᴛᴇ✰
-°. ● . ★ ° .° °☆ ¸. ● . ★　★
-° **🕹 𝐕𝐢𝐞𝐰𝐬 ➪ {views}**☆
-•✰˚♫. * ● ¸ .★ 　° :●. *° °☆ ¸. ● . ★　★
-• **⏰ 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐎𝐧 ➪ {published}**✰
-° °☆ 　¸. ● . 　　★　★✰˚♫. ○ ✰˚♫
-• **📺 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ➪ {channel}**★
-° °☆ 　¸. ● . 　　★　•★• ✰˚♫
-° **📎 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐢𝐧𝐤 ➪ [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})**✰
-° :. 　 * • ○ ° ★　 .　 * 　.✰˚  ♫  •✰• ˚♫
-•**📡 𝐋𝐢𝐧𝐤 ➪ [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})**★
-° °☆ 　¸. ● . 　　★　★
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
+😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
+
+📌 **ᴛɪᴛʟᴇ:** {title}
+
+⏳ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration} ᴍɪɴᴜᴛᴇs
+👀 **ᴠɪᴇᴡs:** `{views}`
+⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
+🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
+📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
+🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
+
+💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {config.MUSIC_BOT_NAME}"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -179,7 +172,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/AloneXBots"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/iro_x_support"
                         ),
                     ],
                 ]
@@ -206,24 +199,21 @@ async def start_comm(client, message: Message, _):
         except:
             OWNER = None
         out = private_panel(_, app.username, OWNER)
-        if config.START_IMG_URL:
-            try:
-                await message.reply_sticker("CAACAgUAAxkBAAEJt35ktTDlpHHx0ASdT5hxriTbhBnYywACzAkAAsOyoVXp1wJmxpUwTy8E")
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(
-                        config.MUSIC_BOT_NAME
-                    ),
-                    reply_markup=InlineKeyboardMarkup(out),
-                )
-            except:
-                await message.reply_text(
-                    _["start_2"].format(config.MUSIC_BOT_NAME),
-                    reply_markup=InlineKeyboardMarkup(out),
-                )
-        else:
+        image = config.START_IMG_URL
+        served_chats = len(await get_served_chats())
+        served_users = len(await get_served_users())
+        try:
+            await message.reply_sticker("CAACAgUAAx0CZTyC9AABASWxZLbcO4EGy3-KArVzcggOkLhy9o8AAqEKAAI10LhVbR-6DKqKOWsvBA")
+            await message.reply_photo(
+                photo=image,
+                caption=_["start_2"].format(
+                    message.from_user.first_name, config.MUSIC_BOT_NAME, served_users, served_chats
+                ),
+                reply_markup=InlineKeyboardMarkup(out),
+            )
+        except:
             await message.reply_text(
-                _["start_2"].format(config.MUSIC_BOT_NAME),
+                _["start_2"].format(message.from_user.first_name, config.MUSIC_BOT_NAME, served_users, served_chats),
                 reply_markup=InlineKeyboardMarkup(out),
             )
         if await is_on_off(config.LOG):
@@ -244,7 +234,7 @@ async def start_comm(client, message: Message, _):
 @LanguageStart
 async def testbot(client, message: Message, _):
     OWNER = OWNER_ID[0]
-    out = start_pannel(_, app.username, OWNER)
+    out = start_pannel(_, app.username)
     return await message.reply_photo(
                photo=config.START_IMG_URL,
                caption=_["start_1"].format(
