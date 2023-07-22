@@ -44,7 +44,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="💥 𝕊ᴜᴘᴘᴏʀ𝕋 💥", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="💥 𝕊ᴏᴜʀᴄ𝔼 💥", url=f"https://github.com/TeamAloneOp/AloneXMusic/fork"
+                text="💥 𝕊ᴏᴜʀᴄ𝔼 💥", url=f"https://github.com/TeamAloneOp/AloneX/fork"
             ),
         ],
         [
