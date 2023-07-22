@@ -5,52 +5,49 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import config
 
 
-def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+def start_pannel(_, BOT_USERNAME):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💥 ⁣𓆩𝔸DD 𝕄E 𝕋O 𝕐OUƦ 𝔾ƦOUק𓆪 💥",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ❄️",
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
-            InlineKeyboardButton(
-                text="💥 ℂᴏᴍᴍᴀɴᴅʟᴇℝ 💥",
-                callback_data="settings_back_helper",
-            ),
-            InlineKeyboardButton(
-                text="💥 𝕊ᴇᴛᴛɪɴɢꜱ 💥", callback_data="settings_helper"
-            ),
+            InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"),
         ],
-     ]
+        ]
     return buttons
-
 
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💥 𓆩𝔸DD 𝕄E 𝕋O 𝕐OUƦ 𝔾ƦOUק𓆪 💥",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ❄️",
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
-            InlineKeyboardButton(
-                text="💥 ℂᴏᴍᴍᴀɴᴅʟᴇℝ 💥", callback_data="settings_back_helper"
-            )
+            InlineKeyboardButton(text="☃˹ꜱᴜᴘᴘᴏʀᴛ˼☃", url=config.SUPPORT_GROUP),
+            InlineKeyboardButton(text="♪˹ᴜᴘᴅᴀᴛᴇꜱ˼♪", url=config.SUPPORT_CHANNEL),
         ],
         [
-            InlineKeyboardButton(
-                text="💥 𝕊ᴜᴘᴘᴏʀ𝕋 💥", url=config.SUPPORT_GROUP
-            ),
-            InlineKeyboardButton(
-                text="💥 𝕊ᴏᴜʀᴄ𝔼 💥", url=f"https://github.com/TeamAloneOp/AloneX/fork"
-            ),
+            InlineKeyboardButton(text="♡ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ♡", callback_data="settings_back_helper"),
         ],
         [
-            InlineKeyboardButton(
-                text="𓊈💥🔥𝔻eͥѵeͣlͫ𐍉קeℝ🔥💥𓊉", user_id=OWNER
-            )
+            InlineKeyboardButton(text="☠Sᴏᴜʀᴄᴇ☠", url=config.GITHUB_REPO),
+            InlineKeyboardButton(text="ღ Oᴡɴᴇʀ ღ", user_id=OWNER),
         ],
-     ]
+    ]
     return buttons
+
+close_key = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                    )
+                ]
+            ]
+        )
