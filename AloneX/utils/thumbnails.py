@@ -128,7 +128,7 @@ async def gen_thumb(videoid, user_id):
                 f"ALONE PLAYING",
                 fill="white",
                 stroke_width=3,
-                stroke_fill="grey",
+                stroke_fill="green",
                 font=font,
             )
             if para[0]:
@@ -268,7 +268,7 @@ async def gen_qthumb(videoid, user_id):
                 "ADDED TO QUEUE",
                 fill="white",
                 stroke_width=5,
-                stroke_fill="black",
+                stroke_fill="green",
                 font=font,
             )
             if para[0]:
