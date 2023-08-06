@@ -64,7 +64,11 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝗔𝗟𝗢𝗡𝗘 𝗠𝗨𝗦𝗜𝗖🌱", url=f"https://github.com/TeamAloneOp/AloneX/fork")
+                        "•ᴀʟᴏɴᴇ ᴍᴜꜱɪᴄ•", url="https://github.com/TeamAloneOp/AloneX/fork"
+                    ),
+                    InlineKeyboardButton(
+                        "•ᴀʟᴏɴᴇ ʀᴏʙᴏᴛ•", url="https://github.com/TeamAloneOp/AloneRobot/fork"
+                    ),
                 ]
             ]
         ),
