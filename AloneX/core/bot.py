@@ -27,7 +27,7 @@ class AloneXBot(Client):
 
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀʟᴏʙᴇ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.id}`\n❄ ɴᴀᴍᴇ : {self.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
+                config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀʟᴏɴᴇ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.id}`\n❄ ɴᴀᴍᴇ : {self.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
             )
         except:
             LOGGER(__name__).error(
