@@ -50,7 +50,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
@@ -58,16 +61,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"{config.SUPPORT_GROUP}",
+                text="🥀 𝐒𝚄𝙿𝙿𝙾𝚁𝚃 🥀", url=f"{config.SUPPORT_GROUP}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ 𝑪𝒍𝒐𝒔𝒆 ✯", callback_data=f"close"
             )
         ],
     ]
@@ -80,25 +79,25 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     alone = math.floor(percentage)
     if 0 < alone <= 10:
-        bar = "⚪─────────"
-    elif 10 < alone < 20:
-        bar = "━⚪────────"
-    elif 20 <= alone < 30:
-        bar = "━━⚪───────"
-    elif 30 <= alone < 40:
-        bar = "━━━⚪──────"
-    elif 40 <= alone < 50:
-        bar = "━━━━⚪─────"
-    elif 50 <= alone < 60:
-        bar = "━━━━━⚪────"
-    elif 60 <= alone < 70:
-        bar = "━━━━━━⚪───"
-    elif 70 <= alone < 80:
-        bar = "━━━━━━━⚪──"
-    elif 80 <= alone < 95:
-        bar = "━━━━━━━━⚪─"
+        bar = "⬤─────────"
+    elif 10 < AloneX < 20:
+        bar = "━⬤────────"
+    elif 20 <= AloneX < 30:
+        bar = "━━⬤───────"
+    elif 30 <= AloneX < 40:
+        bar = "━━━⬤──────"
+    elif 40 <= AloneX < 50:
+        bar = "━━━━⬤─────"
+    elif 50 <= AloneX < 60:
+        bar = "━━━━━⬤────"
+    elif 60 <= AloneX < 70:
+        bar = "━━━━━━⬤───"
+    elif 70 <= AloneX < 80:
+        bar = "━━━━━━━⬤──"
+    elif 80 <= AloneX < 95:
+        bar = "━━━━━━━━⬤─"
     else:
-        bar = "━━━━━━━━━⚪"
+        bar = "━━━━━━━━━⬤"
 
     buttons = [
         [
@@ -116,7 +115,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
@@ -124,16 +126,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🇮🇳 ᴩʟᴀʏʟɪsᴛ ➕",
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"{config.SUPPORT_GROUP}",
+                text="🥀 𝐒𝚄𝙿𝙿𝙾𝚁𝚃 🥀", url=f"{config.SUPPORT_GROUP}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ 𝑪𝒍𝒐𝒔𝒆 ✯", callback_data=f"close"
             )
         ],
     ]
