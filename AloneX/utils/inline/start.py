@@ -9,8 +9,8 @@ def start_pannel(_, BOT_USERNAME):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥀 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 ✨",
-                callback_data="settings_back_helper"),
+                text="🥀 𝐂σммαи∂ѕ ✨",
+                callback_data="settings_back_helper",
             )
         ],
         [
@@ -69,7 +69,7 @@ close_key = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                        text="✯ 𝐂ℓσѕє ✯", callback_data="close"
                     )
                 ]
             ]
