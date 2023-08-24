@@ -121,9 +121,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text="🥀 𝐒𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=config.SUPPORT_GROUP
-            ),
+            InlineKeyboardButton(text="Oᴡɴᴇʀ", user_id=OWNER),
+            InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP),
         ],
         [
             InlineKeyboardButton(
