@@ -14,8 +14,8 @@ def start_pannel(_, BOT_USERNAME):
             )
         ],
         [
-            InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", callback_data="settings_back_helper"),
-            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=config.GITHUB_REPO),
+            InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url=config.GITHUB_REPO),
         ],
         ]
     return buttons
