@@ -43,7 +43,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "A Pyrogram v1 String Session from @AloneXStringBot on Telegram.",
         "value": "",
         "required": true
       },
