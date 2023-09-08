@@ -45,7 +45,7 @@ GBAN_COMMAND = get_command("GBAN_COMMAND")
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/2ff2dab0dd5953e674c79.jpg",
+        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -99,7 +99,7 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/2ff2dab0dd5953e674c79.jpg",
+        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
