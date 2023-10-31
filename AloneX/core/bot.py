@@ -24,11 +24,10 @@ class AloneXBot(Client):
         self.username = get_me.username
         self.id = get_me.id
         self.name = get_me.first_name + " " + (get_me.last_name or "")
-        self.mention = self.me.mention
 
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, f"**» {self.mention} ᴀʟᴏɴᴇ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.id}`\n❄ ɴᴀᴍᴇ : {self.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
+                config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀʟᴏɴᴇ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.id}`\n❄ ɴᴀᴍᴇ : {self.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
             )
         except:
             LOGGER(__name__).error(
@@ -42,4 +41,4 @@ class AloneXBot(Client):
                 "Please promote Bot as Admin in Logger Group"
             )
             sys.exit()
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"MusicBot Started as @{self.username}")
