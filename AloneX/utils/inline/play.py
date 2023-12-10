@@ -12,28 +12,27 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    alone = math.floor(percentage)
-    if 0 < alone <= 10:
-        bar = "⚪─────────"
-    elif 10 < alone < 20:
-        ba = "━⚪────────"
-    elif 20 <= alone < 30:
-        ba = "━━⚪───────"
-    elif 30 <= alone < 40:
-        ba = "━━━⚪──────"
-    elif 40 <= alone < 50:
-        ba = "━━━━⚪─────"
-    elif 50 <= alone < 60:
-        ba = "━━━━━⚪────"
-    elif 60 <= alone < 70:
-        ba = "━━━━━━⚪───"
-    elif 70 <= alone < 80:
-        ba = "━━━━━━━⚪──"
-    elif 80 <= alone < 95:
-        ba = "━━━━━━━━⚪─"
-    else:
-        ba = "━━━━━━━━━⚪"
-
+    asif = math.floor(percentage)
+    if 0 < asif <= 10:
+        bar = "🍫─────────"
+    elif 10 < asif < 20:
+        ba = "━🍫────────"
+    elif 20 <= asif < 30:
+        ba = "━━🍫───────"
+    elif 30 <= asif < 40:
+        ba = "━━━🍫──────"
+    elif 40 <= asif < 50:
+        ba = "━━━━🍫─────"
+    elif 50 <= asif < 60:
+        ba = "━━━━━🍫────"
+    elif 60 <= asif < 70:
+        ba = "━━━━━━🍫───"
+    elif 70 <= asif < 80:
+        ba = "━━━━━━━🍫──"
+    elif 80 <= asif < 90:
+        ba = "━━━━━━━━🍫─"
+    else: 90 <= asif < 100
+        ba = "━━━━━━━━━🍫"
     buttons = [
         [
             InlineKeyboardButton(
@@ -80,27 +79,27 @@ def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    alone = math.floor(percentage)
-    if 0 < alone <= 10:
-        bar = "⚪─────────"
-    elif 10 < alone < 20:
-        ba = "━⚪────────"
-    elif 20 <= alone < 30:
-        ba = "━━⚪───────"
-    elif 30 <= alone < 40:
-        ba = "━━━⚪──────"
-    elif 40 <= alone < 50:
-        ba = "━━━━⚪─────"
-    elif 50 <= alone < 60:
-        ba = "━━━━━⚪────"
-    elif 60 <= alone < 70:
-        ba = "━━━━━━⚪───"
-    elif 70 <= alone < 80:
-        ba = "━━━━━━━⚪──"
-    elif 80 <= alone < 95:
-        ba = "━━━━━━━━⚪─"
-    else:
-        ba = "━━━━━━━━━⚪"
+    asif = math.floor(percentage)
+    if 0 < asif <= 10:
+        bar = "🍫─────────"
+    elif 10 < asif < 20:
+        ba = "━🍫────────"
+    elif 20 <= asif < 30:
+        ba = "━━🍫───────"
+    elif 30 <= asif < 40:
+        ba = "━━━🍫──────"
+    elif 40 <= asif < 50:
+        ba = "━━━━🍫─────"
+    elif 50 <= asif < 60:
+        ba = "━━━━━🍫────"
+    elif 60 <= asif < 70:
+        ba = "━━━━━━🍫───"
+    elif 70 <= asif < 80:
+        ba = "━━━━━━━🍫──"
+    elif 80 <= asif < 90:
+        ba = "━━━━━━━━🍫─"
+    else: 90 <= asif < 100
+        ba = "━━━━━━━━━🍫"
 
     buttons = [
         [
