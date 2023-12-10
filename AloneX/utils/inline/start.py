@@ -9,13 +9,13 @@ def start_pannel(_, BOT_USERNAME):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴊᴀɴᴀ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
             InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs", callback_data="settings_back_helper"),
-            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url=config.GITHUB_REPO),
+            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url=f"https://github.com/ASIFXQUEEN/tagmusic"),
         ],
         ]
     return buttons
@@ -24,7 +24,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴊᴀɴᴀ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
@@ -37,7 +37,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=config.GITHUB_REPO),
+            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/ASIFXQUEEN/tagmusic"),
         ],
     ]
     return buttons
