@@ -17,13 +17,13 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹Aʟᴏɴᴇ Cᴏᴅᴇʀ🌹", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x2E\x6D\x65\x2F\x41\x4C\x4F\x4E\x45\x5F\x57\x41\x53\x5F\x42\x4F\x54")
+                        "🌹ASIF🌹", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x2E\x6D\x65\x2F\x41\x4C\x4F\x4E\x45\x5F\x57\x41\x53\x5F\x42\x4F\x54")
                 ]
             ]
         ),
@@ -35,13 +35,13 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹Aʟᴏɴᴇ Cᴏᴅᴇʀ🌹", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x2E\x6D\x65\x2F\x41\x4C\x4F\x4E\x45\x5F\x57\x41\x53\x5F\x42\x4F\x54")
+                        "🌹XQUEENSERVER🌹", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x2E\x6D\x65\x2F\x41\x4C\x4F\x4E\x45\x5F\x57\x41\x53\x5F\x42\x4F\x54")
                 ]
             ]
         ),
@@ -58,16 +58,16 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ᴍᴜꜱɪᴄ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
+                        "•NAVEEN MUSIC•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ʀᴏʙᴏᴛ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
+                        "•ASIFXQUEEN•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
                     ),
                 ]
             ]
@@ -80,16 +80,16 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ᴍᴜꜱɪᴄ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
+                        "•MAVEEN MUSIC•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ʀᴏʙᴏᴛ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
+                        "•ASIFXQUEEN•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
                     ),
                 ]
             ]
@@ -102,16 +102,16 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ᴍᴜꜱɪᴄ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
+                        "•NAVEEN MUSIC•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x58"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀʟᴏɴᴇ ʀᴏʙᴏᴛ•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
+                        "•ASIFXQUEEN•", url=f"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x54\x65\x61\x6D\x41\x6C\x6F\x6E\x65\x4F\x70\x2F\x41\x6C\x6F\x6E\x65\x52\x6F\x62\x6F\x74"
                     ),
                 ]
             ]
