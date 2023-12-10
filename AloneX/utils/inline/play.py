@@ -63,7 +63,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="Sᴏᴜʀᴄᴇ", url=config.GITHUB_REPO
+                text="ᴹᶜ", url=config.OWNER_ID
             ),
         ],
         [
@@ -131,7 +131,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="Sᴏᴜʀᴄᴇ", url=config.GITHUB_REPO
+                text="ᴹᶜ", url=config.OWNER_ID
             ),
         ],
         [
