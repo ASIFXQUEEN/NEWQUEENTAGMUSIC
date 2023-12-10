@@ -87,7 +87,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/AlonesHeaven) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Ashif903) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -171,7 +171,7 @@ async def start_comm(client, message: Message, _):
 ● 📡 **𝐋ιик ➪ [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})**☆.♡
 •✰˚♫. * ● ¸ . ★ .¸¸♡¸¸★ :●. *°☆ ¸. ● .. ✷
 
-☆............𝙱𝚈 » [𝙰𝙻𝙾𝙽𝙴](https://t.me/ALONE_WAS_BOT)............☆"""
+☆............𝙱𝚈 » [BOT](https://t.me/NAXQUEEN_BOT)............☆"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -179,7 +179,7 @@ async def start_comm(client, message: Message, _):
                             text="🥀𝐘συтυвє🥀", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🏓𝐒υρρσят🏓", url="https://t.me/AlonesHeaven"
+                            text="🏓𝐒υρρσят🏓", url="https://t.me/ODDRAGONS"
                         ),
                     ],
                 ]
