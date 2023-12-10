@@ -114,11 +114,11 @@ confirmer = {}
 
 autoclean = []
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/b15c198fb79ce6e71c5b0.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAIDCGV1vmz_9VexcuP8E1Dso4pkMNSwAAIbuzEbI8GpVwgd5HS9dIcDAQADAgADeQADMwQ")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/eee5e3d03dbfcf6514595.jpg",
+    "https://https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAIDCGV1vmz_9VexcuP8E1Dso4pkMNSwAAIbuzEbI8GpVwgd5HS9dIcDAQADAgADeQADMwQ",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -128,12 +128,12 @@ PLAYLIST_IMG_URL = getenv(
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://te.legra.ph/file/df481726bdfafdbc7d85c.jpg",
+    "https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAIDCGV1vmz_9VexcuP8E1Dso4pkMNSwAAIbuzEbI8GpVwgd5HS9dIcDAQADAgADeQADMwQ",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://te.legra.ph/file/df481726bdfafdbc7d85c.jpg",
+    "https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAIDCGV1vmz_9VexcuP8E1Dso4pkMNSwAAIbuzEbI8GpVwgd5HS9dIcDAQADAgADeQADMwQ",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
