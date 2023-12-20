@@ -58,12 +58,21 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
+        
+                 [
             InlineKeyboardButton(
-                text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+
+                text="ɴᴀᴠᴇɴ 💕",
+
+                url=f"t.me/{OWNER_USERNAME}",
+
             ),
             InlineKeyboardButton(
-                text="ᴹᶜ", url=config.OWNER_ID
+
+                text="💌 ɢʀᴏᴜᴘ",
+
+                url=f"{SUPPORT_CHAT}",
+
             ),
         ],
         [
@@ -126,12 +135,21 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
+        
+                 [
             InlineKeyboardButton(
-                text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+
+                text="ɴᴀᴠᴇɴ 💕",
+
+                url=f"t.me/{OWNER_USERNAME}",
+
             ),
             InlineKeyboardButton(
-                text="ᴹᶜ", url=config.OWNER_ID
+
+                text="💌 ɢʀᴏᴜᴘ",
+
+                url=f"{SUPPORT_CHAT}",
+
             ),
         ],
         [
