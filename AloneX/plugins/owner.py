@@ -12,18 +12,18 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @app.on_message(
-    filters.command("owner")
+    filters.command("coder")
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
+        photo=f"https://telegra.ph/file/a290c80a784cbe54976cc.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹ASIF🌹", url=f"https//t.me/ASHIF903")
+                        "🌹Asif Cᴏᴅᴇʀ🌹", url=f"https//t.me/ASHIF903")
                 ]
             ]
         ),
@@ -35,13 +35,13 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
+        photo=f"https://telegra.ph/file/a290c80a784cbe54976cc.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹XQUEENSERVER🌹", url=f"https//t.me/ASHIF903")
+                        "🌹Asif Cᴏᴅᴇʀ🌹", url=f"https//t.me/ASHIF903")
                 ]
             ]
         ),
@@ -58,16 +58,16 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
+        photo=f"https://telegra.ph/file/a290c80a784cbe54976cc.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•NAVEEN MUSIC•", url=f"https//t.me/ASHIF903"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                     InlineKeyboardButton(
-                        "•ASIFXQUEEN•", url=f"https//t.me/ASHIF903"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                 ]
             ]
@@ -80,16 +80,16 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
+        photo=f"https://telegra.ph/file/a290c80a784cbe54976cc.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•MAVEEN MUSIC•", url=f"https//t.me/ASHIF903"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                     InlineKeyboardButton(
-                        "•ASIFXQUEEN•", url=f"https//t.me/ASHIF903"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                 ]
             ]
@@ -102,19 +102,18 @@ async def help(client: Client, message: Message):
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://radare.arzfun.com/api/tg/photo?id=AgACAgUAAxkBAAICu2V05I5iyqVwodWNdGz7LKFICcsvAAKiwTEbbu2oVytQ0lbYIWZ4AQADAgADeAADMwQ",
+        photo=f"https://telegra.ph/file/a290c80a784cbe54976cc.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "•NAVEEN MUSIC•", url=f"https//t.me/ASHIF903"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                     InlineKeyboardButton(
-                        "•ASIFXQUEEN•", url=f"https//t.me/ASHIF903"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
                     ),
                 ]
             ]
         ),
     )
-
