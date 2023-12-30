@@ -34,7 +34,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://telegra.ph/file/cb9827c3970d8f6a7730d.jpg")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://t.me/ASHIF903")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
