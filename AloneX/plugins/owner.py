@@ -64,10 +64,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                 ]
             ]
@@ -86,10 +86,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                 ]
             ]
@@ -108,10 +108,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ɴᴀᴠᴇɴ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                     InlineKeyboardButton(
-                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://telegra.ph/file/905187379436190cf1725.jpg"
+                        "•ᴀꜱɪꜰ Qᴜᴇᴇɴ•", url=f"https://t.me/ashif903"
                     ),
                 ]
             ]
