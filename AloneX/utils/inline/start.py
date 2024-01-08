@@ -15,7 +15,7 @@ def start_pannel(_, BOT_USERNAME):
         ],
         [
             InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs", callback_data="settings_back_helper"),
-            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url=f"https://github.com/ASIFXQUEEN/tagmusic"),
+            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url=config.SUPPORT_GROUP"),
         ],
         ]
     return buttons
@@ -37,7 +37,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://github.com/ASIFXQUEEN/tagmusic"),
+            InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=config.SUPPORT_GROUP"),
         ],
     ]
     return buttons
