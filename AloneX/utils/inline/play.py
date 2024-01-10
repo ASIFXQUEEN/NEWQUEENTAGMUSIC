@@ -12,27 +12,28 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    asif = math.floor(percentage)
-    if 0 < asif <= 10:
-        bar = "⚪─────────"
+    alone = math.floor(percentage)
+    if 0 < alone <= 10:
+        bar = "➢─────────"
     elif 10 < asif < 20:
-        ba = "━⚪────────"
+        ba = "━➢────────"
     elif 20 <= asif < 30:
-        ba = "━━⚪───────"
+        ba = "━━➢───────"
     elif 30 <= asif < 40:
-        ba = "━━━⚪──────"
+        ba = "━━━➢──────"
     elif 40 <= asif < 50:
-        ba = "━━━━⚪─────"
+        ba = "━━━━➢─────"
     elif 50 <= asif < 60:
-        ba = "━━━━━⚪────"
+        ba = "━━━━━➢────"
     elif 60 <= asif < 70:
-        ba = "━━━━━━⚪───"
+        ba = "━━━━━━➢───"
     elif 70 <= asif < 80:
-        ba = "━━━━━━━⚪──"
+        ba = "━━━━━━━➢──"
     elif 80 <= asif < 95:
-        ba = "━━━━━━━━⚪─"
+        ba = "━━━━━━━━➢─"
     else:
-        ba = "━━━━━━━━━⚪"
+        ba = "━━━━━━━━━➢"
+
     buttons = [
         [
             InlineKeyboardButton(
@@ -58,11 +59,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        
-                 [
+        [
             InlineKeyboardButton(
 
-                text="ɴᴀᴠᴇɴ 💕",
+                text="ᴅᴇᴠ 💕",
 
                 url=f"t.me/{OWNER_USERNAME}",
 
@@ -88,27 +88,27 @@ def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    asif = math.floor(percentage)
-    if 0 < asif <= 10:
-        bar = "⚪─────────"
+    alone = math.floor(percentage)
+    if 0 < alone <= 10:
+        bar = "➢─────────"
     elif 10 < asif < 20:
-        ba = "━⚪────────"
+        ba = "━➢────────"
     elif 20 <= asif < 30:
-        ba = "━━⚪───────"
+        ba = "━━➢───────"
     elif 30 <= asif < 40:
-        ba = "━━━⚪──────"
+        ba = "━━━➢──────"
     elif 40 <= asif < 50:
-        ba = "━━━━⚪─────"
+        ba = "━━━━➢─────"
     elif 50 <= asif < 60:
-        ba = "━━━━━⚪────"
+        ba = "━━━━━➢────"
     elif 60 <= asif < 70:
-        ba = "━━━━━━⚪───"
+        ba = "━━━━━━➢───"
     elif 70 <= asif < 80:
-        ba = "━━━━━━━⚪──"
+        ba = "━━━━━━━➢──"
     elif 80 <= asif < 95:
-        ba = "━━━━━━━━⚪─"
+        ba = "━━━━━━━━➢─"
     else:
-        ba = "━━━━━━━━━⚪"
+        ba = "━━━━━━━━━➢"
 
     buttons = [
         [
@@ -136,22 +136,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         
-                 [
-            InlineKeyboardButton(
-
-                text="ɴᴀᴠᴇɴ 💕",
-
-                url=f"t.me/{OWNER_USERNAME}",
-
-            ),
-            InlineKeyboardButton(
-
-                text="💌 ɢʀᴏᴜᴘ",
-
-                url=f"{SUPPORT_CHAT}",
-
-            ),
-        ],
         [
             InlineKeyboardButton(
                 text="✯ Cʟᴏsᴇ ✯", callback_data=f"close"
@@ -171,7 +155,22 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
+     [
             InlineKeyboardButton(
+
+                text="ᴅᴇᴠ 💕",
+
+                url=f"t.me/{OWNER_USERNAME}",
+
+            ),
+            InlineKeyboardButton(
+
+                text="💌 ɢʀᴏᴜᴘ",
+
+                url=f"{SUPPORT_CHAT}",
+
+            ),
+        ],       InlineKeyboardButton(
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
